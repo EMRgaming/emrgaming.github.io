@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Bastion Tower</h1>
+						<h1>Bastion Towers</h1>
 						<h4><a href="index.html" class="button">Home</a></h4>
 					</header>
 
@@ -30,22 +30,30 @@
 
 								<iframe width="100%" height="500" src="https://www.youtube.com/embed/wpV-Ky065ig?si=Y2BD-xGbMvgN59CY&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 								<p><b> Engine|</b> Unity &nbsp;&nbsp; <b>Platform|</b> PC &nbsp; <b>Project length|</b> Jan 2024 - June 2024 &nbsp; <b>Team Size|</b> 3 &nbsp; <b>My Roles|</b> Programmer, Turret and Menu designer</b></p>
+								<p>In Bastion Towers, the player travels throughout different time periods setting up defenses to help protect 
+									various civilizations from alien attacks. The player is equipped with an array of weapons, and can pick up 
+									coins to purchase items in the shop and bolts to buy and upgrade turrets. Because the player is trying to defend
+									against multiple alien attacks throughout time, they must use turrets to set up defenses to protect these civilizations
+									in their absence. </p>
 								<h2>Turret System</h2>
-								<span class="image right"><img src="images/BaseTurret.gif"  height="350" alt="" /></span>
-								<p>The turret system was something I decided I wanted to take on myself. I worked torwards trying to have a 
-									fun exciting way to have the turrets be useful to the player and a way to upgrade the turrets so that the player
-									has assistance taking on the enemies. I started with the basic turret and worked on tracking enemies and 
-									getting the turret to aim torwards and shooting at said enemy.
+								<span class="image right"><img src="images/BaseTurret.gif"  height="200%" width="100%" alt="" /></span>
+								<p>The turret system was an aspect I decided to take on myself. We needed a goal for the player to work towards to 
+									advance to the next level. To do this, each level has a set defensive score the player must reach.
+									Each turret increases the player's defensive score. Once the player has reached the defensive score, 
+									the civilization is properly defended and the player can move on to the next time period. 
 								</p>
 								<br><br><br><br>
-								<span class="image left"><img src="images/BaseTurret.gif"  height="350" alt="" /></span>
-								<p>Next I moved on to being able to buy and place a turret where the player would like. I started with
-									making a menu that would allow the player to select the turret to purchase. Then I added a placeholder turret
-									to show the player where the turret would be placed. This was a fun and interesting process trying to figure out
-									how to have the turrets spawn and be palced correctly according to the player.
+								<span class="image left"><img src="images/BaseTurret.gif"  height="200%" width="100%" alt="" /></span>
+								<p> I started with the basic level 1 turret. I added a sphere collider which is checking for a Game Object that is 
+									tagged with the Enemy tag attached to it. When the enemy walks into the sphere it is added to a list of enemies.
+									Now if the enemy dies or if the enemy leaves the sphere the enemy is removed from the list and the turret moves
+									to the next avaliable enemy in the list. The turret has a empty object set as a firing location and instatiates
+									a bullet at that location, which then applies a force to the bullet in the direction of the enemy.
 								</p>
-								<br><br><br><br>
-								<p>I also worked on designing most of the menus for our game.</p>
+								<br><br>
+								<p> ASDfasdfa
+
+								</p>
 							</section>
 					</div>
 
