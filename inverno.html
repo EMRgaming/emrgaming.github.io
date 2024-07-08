@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Inverno</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Inverno</h1>
+						<h4><a href="index.html" class="button">Home</a></h4>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Content -->
+							<section id="content" class="main">
+
+								<iframe width="100%" height="500" src="https://www.youtube.com/embed/wpV-Ky065ig?si=Y2BD-xGbMvgN59CY&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<p><b> Engine|</b> Unity &nbsp;&nbsp; <b>Platform|</b> PC &nbsp; <b>Project length|</b> Nov 2022 - Dec 2022 &nbsp; <b>Team Size|</b> 3 &nbsp; <b>My Roles|</b> Programmer, Animator, FrontEnd Developer</p>
+								<p>
+
+								</p>
+								<h2>Turret System</h2>
+								<span class="image right"><img src="images/BaseTurret.gif"  height="200%" width="100%" alt="" /></span>
+								<p>The turret system was an aspect I decided to take on myself. We needed a goal for the player to work towards to 
+									advance to the next level. To do this, each level has a set defensive score the player must reach.
+									Each turret increases the player's defensive score. Once the player has reached the defensive score, 
+									the civilization is properly defended and the player can move on to the next time period. 
+								</p>
+								<br><br><br><br>
+								<span class="image left"><img src="images/TurretShooting.gif"  height="200%" width="100%" alt="" /></span>
+								<p> I started with the basic level 1 turret. I added a sphere collider which is checking for a Game Object that is 
+									tagged with the Enemy tag attached to it. When the enemy walks into the sphere, it is added to a list of enemies.
+									Now, if the enemy dies or if the enemy leaves the sphere, the enemy is removed from the list and the turret moves
+									to the next available enemy in the list. The turret has an empty object set as a firing location and instantiates
+									a bullet at that location, which then applies a force to the bullet in the direction of the enemy.
+								</p>
+								<br><br>
+								<span class="image main"><img src="images/TurretMenu.png" alt="" /></span>
+								<h2>Menus </h2>
+								<p>I also created part of the menu UI in Bastion Towers. I wanted a simplistic way to display
+									our menus so that it was easy to navigate for the players. I worked on the main menu shown above for purchasing
+									turrets and swapping between the Turret and Shop menus. We thought having the menus combined in a tab-like system
+									would help the player quickly swap between the menus while in the middle of the round. The turret menu allows the
+									player to quickly buy new turrets to place on the map, while the shop menu is there for health  packs, barbed wire, and
+									ammo. We made the menu transparent so that the player was able to still see their surroundings while in the menus.
+								</p>
+								<br><br><br><br>
+							</section>
+					</div>
+				  <!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>Email</dt>
+								<a href="mailto:eli_rogers96@ymail.com">eli_rogers96@ymail.com</a>
+								<br>
+								<dt2>Linkedin</dt2>
+								<a href="https://www.linkedin.com/in/eli-rogers-28b24a22b" target="_blank">linkedin.com/in/eli-rogers-28b24a22b</a>
+							</dl>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer> 
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
