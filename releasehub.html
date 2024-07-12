@@ -26,22 +26,31 @@
 					<div id="main">
 						<!-- Content -->
 							<section id="content" class="main">
-
-								<iframe width="100%" height="500" src="https://www.youtube.com/embed/wpV-Ky065ig?si=Y2BD-xGbMvgN59CY&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-								<p><b> Engine|</b> Unity &nbsp;&nbsp; <b>Platform|</b> PC &nbsp; <b>Project length|</b> Jan 2024 - June 2024 &nbsp; <b>Team Size|</b> 3 &nbsp; <b>My Roles|</b> Programmer, Turret and Menu designer</b></p>
+								<iframe src="https://www.youtube.com/embed/wpV-Ky065ig?si=Y2BD-xGbMvgN59CY&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<p><b>Engine|</b> Unity &nbsp;&nbsp; <b>Platform|</b> PC &nbsp; <b>Project length|</b> Jan 2024 - June 2024 &nbsp; <b>Team Size|</b> 3 &nbsp; <b>My Roles|</b> Programmer, Turret and Menu designer</b></p>
 								<p>In Bastion Towers, the player travels throughout different time periods setting up defenses to help protect 
 									various civilizations from alien attacks. The player is equipped with an array of weapons, and can pick up 
 									coins to purchase items in the shop and bolts to buy and upgrade turrets. Because the player is trying to defend
 									against multiple alien attacks throughout time, they must use turrets to set up defenses to protect these civilizations
 									in their absence. </p>
+								<h2> Responsibilities</h2>
+								<ul>
+									<li>Created initial pitch for the game and presented it to teammates.</li>
+									<li>Tested and debugged code written by my teammates and I.</li>
+									<li>Created code for turret system while combining assets from the Unity store to create defensive towers for the player to build.</li>
+									<li>Designed Start, Pause, and shop menus for player to use and created functions for each button.</li>
+								</ul>
 								<h2>Turret System</h2>
 								<span class="image right"><img src="images/BaseTurret.gif"  height="200%" width="100%" alt="" /></span>
 								<p>The turret system was an aspect I decided to take on myself. We needed a goal for the player to work towards to 
 									advance to the next level. To do this, each level has a set defensive score the player must reach.
 									Each turret increases the player's defensive score. Once the player has reached the defensive score, 
-									the civilization is properly defended and the player can move on to the next time period. 
+									the civilization is properly defended and the player can move on to the next time period. We decided that
+									bolts would be the best thing for the player to collect as currency for building and creating turrets. I was
+									put in charge of creating the drop that my teammate had the enemies drop and added the spinning affect to the
+									item to make it more visible.
 								</p>
-								<br><br><br><br>
+								<br><br>
 								<span class="image left"><img src="images/TurretShooting.gif"  height="200%" width="100%" alt="" /></span>
 								<p> I started with the basic level 1 turret. I added a sphere collider which is checking for a Game Object that is 
 									tagged with the Enemy tag attached to it. When the enemy walks into the sphere, it is added to a list of enemies.
@@ -59,7 +68,7 @@
 									player to quickly buy new turrets to place on the map, while the shop menu is there for health  packs, barbed wire, and
 									ammo. We made the menu transparent so that the player was able to still see their surroundings while in the menus.
 								</p>
-								<br><br><br><br>
+								<br><br>
 							</section>
 					</div>
 				  <!-- Footer -->

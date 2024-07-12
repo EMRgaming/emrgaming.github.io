@@ -26,38 +26,43 @@
 					<div id="main">
 						<!-- Content -->
 							<section id="content" class="main">
-
-								<iframe width="100%" height="500" src="https://www.youtube.com/embed/wpV-Ky065ig?si=Y2BD-xGbMvgN59CY&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-								<p><b> Engine|</b> Unity &nbsp;&nbsp; <b>Platform|</b> PC &nbsp; <b>Project length|</b> Nov 2022 - Dec 2022 &nbsp; <b>Team Size|</b> 3 &nbsp; <b>My Roles|</b> Programmer, Animator, FrontEnd Developer</p>
-								<p>
-
+								<iframe src="https://www.youtube.com/embed/wpV-Ky065ig?si=Y2BD-xGbMvgN59CY&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<p><b>Engine|</b> Unity &nbsp;&nbsp; <b>Platform|</b> PC &nbsp; <b>Project length|</b> Nov 2022 - Dec 2022 &nbsp; <b>Team Size|</b> 3 &nbsp; <b>My Roles|</b> Programmer, Turret and Menu designer</b></p>
+								<p> Inverno is about a child who is on winter break but spring is around the corner, and the heat is coming to melt away the snow and send the kids back 
+									to school. In this game, you play as the child who is using their imagination to see themselves as a mage with snow-like powers. Using their ice
+									daggers, snowballs, and winter storms, the player will fight back against the inferno monsters coming to melt away all the snow. The enemies are 
+									assigned to attack snowmen stationed around the world. The player's job is to destroy the enemies before they destroy all the snowmen on the map 
+									or kill the player.
 								</p>
-								<h2>Turret System</h2>
+								<h2> Responsibilities</h2>
+								<ul> 
+									<li>Designed UI assets and added SFX and music.</li>
+									<li>Play tested game and debugged code using white box testing.</li>
+									<li>Customized player prefab and solved player prefab model issues.</li>
+									<li>Adjusted animations for player model and enemy models with different movement states.</li>
+									<li>Added an ice dagger ability to the player and customized animations to fit with each attack method.</li>
+								</ul>
+								<h2>Animations</h2>
 								<span class="image right"><img src="images/BaseTurret.gif"  height="200%" width="100%" alt="" /></span>
-								<p>The turret system was an aspect I decided to take on myself. We needed a goal for the player to work towards to 
-									advance to the next level. To do this, each level has a set defensive score the player must reach.
-									Each turret increases the player's defensive score. Once the player has reached the defensive score, 
-									the civilization is properly defended and the player can move on to the next time period. 
-								</p>
-								<br><br><br><br>
-								<span class="image left"><img src="images/TurretShooting.gif"  height="200%" width="100%" alt="" /></span>
-								<p> I started with the basic level 1 turret. I added a sphere collider which is checking for a Game Object that is 
-									tagged with the Enemy tag attached to it. When the enemy walks into the sphere, it is added to a list of enemies.
-									Now, if the enemy dies or if the enemy leaves the sphere, the enemy is removed from the list and the turret moves
-									to the next available enemy in the list. The turret has an empty object set as a firing location and instantiates
-									a bullet at that location, which then applies a force to the bullet in the direction of the enemy.
+								<p> I took on the role of creating the animations for all the models in the game. We wanted the game to feel like a fast-paced action game so, our animations
+									needed to match that. I started with basic walking and running animations and slowly worked towards adding more advanced animations like jumping and dodging.
+									The next step was to work on the attack animations and adding animations for the different abilities like double jumps and dash ability.
 								</p>
 								<br><br>
-								<span class="image main"><img src="images/TurretMenu.png" alt="" /></span>
-								<h2>Menus </h2>
-								<p>I also created part of the menu UI in Bastion Towers. I wanted a simplistic way to display
-									our menus so that it was easy to navigate for the players. I worked on the main menu shown above for purchasing
-									turrets and swapping between the Turret and Shop menus. We thought having the menus combined in a tab-like system
-									would help the player quickly swap between the menus while in the middle of the round. The turret menu allows the
-									player to quickly buy new turrets to place on the map, while the shop menu is there for health  packs, barbed wire, and
-									ammo. We made the menu transparent so that the player was able to still see their surroundings while in the menus.
+								<span class="image left"><img src="images/TurretShooting.gif" width="100%" alt="" /></span>
+								<h2>Player</h2>
+								<p> I worked on timing the animations for landing and jumping so that when the player hits the jump buttons, the animations transition smoothly from one to the next. 
+									I also programmed that when a certain button is pushed, a corresponding animation will play. For the attacks, I repeated the same method. However, within these animations, 
+									once the animation got to a certain frame, the animation would call a method that would spawn whatever attack was happening so that it would occur at the correct time.
 								</p>
-								<br><br><br><br>
+								<span class="image main"><img src="images/Inverno Enemies.png" alt="" /></span>
+								<h2>Enemies</h2>
+								<p>Lastly, I worked on the enemy movement and animations. The base objective is to find the snow closest to the enemies and attack it. I programmed it to where
+									the snow locations were compiled into a list. The enemy then finds the snow in the list that is closest and moves towards it. If the player
+									gets close enough, then the enemy turns to attack the player. I created three different enemy types: small, medium, and large. They have various
+									movement speeds and attack distances, which makes them a little bit more dynamic. These enemies have a cone of vision, and if the player is within a certain
+									distance and inside their cone of vision, the enemies will move towards the player and start to attack them.
+								</p>
 							</section>
 					</div>
 				  <!-- Footer -->
