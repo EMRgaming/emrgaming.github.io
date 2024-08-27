@@ -333,7 +333,7 @@ input, select, textarea {
 	}
 
 	code {
-		background: rgba(255, 255, 255, 0.075);
+		background: rgba(143, 51, 51, 0.075);
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
@@ -3404,8 +3404,8 @@ input, select, textarea {
 		#main button,
 		#main .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			box-shadow: inset 0 0 0 1px #626262;
+			color: #000000 !important;
 		}
 
 			#main input[type="submit"]:hover,
